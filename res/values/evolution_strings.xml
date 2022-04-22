@@ -322,4 +322,8 @@
     <!-- Swipe to screenshot -->
     <string name="swipe_to_screenshot_title">Swipe to screenshot</string>
     <string name="swipe_to_screenshot_summary">Swipe 3 fingers down the screen to take a screenshot</string>
+
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_title">Back gesture animation</string>
+    <string name="back_gesture_arrow_summary">Show an animated arrow for back gesture</string>
 </resources>
