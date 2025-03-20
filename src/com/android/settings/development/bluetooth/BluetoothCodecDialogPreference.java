@@ -70,10 +70,18 @@ public class BluetoothCodecDialogPreference extends BaseBluetoothDialogPreferenc
         for (int i = 0; i < stringArray.length; i++) {
             mRadioButtonStrings.add(stringArray[i]);
         }
+        if (mRadioButtonStrings.size() != mRadioButtonIds.size()) {
+            mRadioButtonStrings.add("LHDC V3");
+            mRadioButtonStrings.add("LHDC V5");
+        }
         stringArray = context.getResources()
                 .getStringArray(com.android.settingslib.R.array.bluetooth_a2dp_codec_summaries);
         for (int i = 0; i < stringArray.length; i++) {
             mSummaryStrings.add(stringArray[i]);
+        }
+        if (mSummaryStrings.size() != mRadioButtonIds.size()) {
+            mSummaryStrings.add("LHDC V3");
+            mSummaryStrings.add("LHDC V5");
         }
     }
 }
