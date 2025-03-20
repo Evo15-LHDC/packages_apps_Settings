@@ -133,9 +133,7 @@ public class BluetoothCodecDialogPreferenceController extends
                 codecTypeValue = BluetoothCodecConfig.SOURCE_CODEC_TYPE_OPUS;
                 codecPriorityValue = BluetoothCodecConfig.CODEC_PRIORITY_HIGHEST;
                 break;
-            default:
-                break;
-            // Savitech LHDC -- START
+             // Savitech LHDC -- START
             case 8:
                 codecTypeValue = BluetoothCodecConfig.SOURCE_CODEC_TYPE_LHDCV3;
                 codecPriorityValue = BluetoothCodecConfig.CODEC_PRIORITY_HIGHEST;
@@ -145,6 +143,8 @@ public class BluetoothCodecDialogPreferenceController extends
                 codecPriorityValue = BluetoothCodecConfig.CODEC_PRIORITY_HIGHEST;
                 break;
             // Savitech LHDC -- END
+            default:
+                break;
         }
         mBluetoothA2dpConfigStore.setCodecType(codecTypeValue);
         mBluetoothA2dpConfigStore.setCodecPriority(codecPriorityValue);
