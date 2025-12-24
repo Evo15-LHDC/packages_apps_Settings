@@ -1184,4 +1184,9 @@
         <item name="cornerSize">12dp</item>
     </style>
 
+    <style name="Theme.Settings.LocalePicker" parent="@style/Theme.Settings">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">true</item>
+    </style>
 </resources>
